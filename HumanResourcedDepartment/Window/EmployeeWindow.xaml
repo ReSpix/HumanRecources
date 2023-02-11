@@ -1,0 +1,29 @@
+﻿<Window x:Class="HumanResources.EmployeeWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:HumanResources"
+        mc:Ignorable="d"
+        Title="Сотрудник" Height="212" Width="588">
+    <Grid>
+        <StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <StackPanel>
+                    <Label Height="30" Margin="0,10,0,0">ФИО</Label>
+                    <Label Height="30" Margin="0,10,0,0">Паспорт</Label>
+                    <Label Height="30" Margin="0,10,0,0">Должность</Label>
+                </StackPanel>
+                <StackPanel>
+                    <TextBox Width="500" Height="30" Margin="0,10,0,0" Name="NameBox"></TextBox>
+                    <TextBox Width="500" Height="30" Margin="0,10,0,0" Name="PassportBox"></TextBox>
+                    <TextBox Width="500" Height="30" Margin="0,10,0,0" Name="JobBox"></TextBox>
+                </StackPanel>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="0,10,0,0">
+                <Button Margin="10,10,0,0" Click="SaveClick">Сохранить</Button>
+                <Button Margin="10,10,0,0" Click="CancelClick">Отмена</Button>
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</Window>
